@@ -40,20 +40,152 @@
             <li class="list-item"><a class="item link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <address class="contacts">
-          <ul class="list address">
-            <li class="contact-item">
-              <a class="contact link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contact-item">
-              <a class="contact link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+
+        <div class="contact-section">
+          <address class="contacts">
+            <ul class="list address">
+              <li class="contact-item">
+                <a class="contact link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-item">
+                <a class="contact link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- HW7 -->
+
+        <!-- Mobile Menu Icon -->
+        <div class="mobile-menu-icon">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="mobile-menu-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="22"
+            >
+              <use href="./images/icons.svg#hamburger-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Hidden Mobile Menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            class="menu-toggle-close-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="8"
+          >
+            <use href="./images/icons.svg#modal-close"></use>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu-container">
+          <div class="mobile-main-menu">
+            <ul class="mobile-list-menu">
+              <li class="mobile-list-item">
+                <a class="item-link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-list-item">
+                <a class="active item-link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-list-item">
+                <a class="item-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-contact-menu">
+            <ul class="mobile-list-contact">
+              <li class="mobile-contact-item">
+                <a class="item-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contact-item">
+                <a class="email-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <!-- Socmed Icons -->
+            <div class="socmed-icon-wrapper">
+              <ul class="list mobile-menu-socmed">
+                <!-- Instagram Icon -->
+                <li class="mobile-menu-socmed-icon">
+                  <a href="" class="mobile-menu-socmed-link">
+                    <svg
+                      class="mobile-menu-socmed-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#instagram-footer"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <!-- Twitter Icon -->
+                <li class="mobile-menu-socmed-icon">
+                  <a href="" class="mobile-menu-socmed-link">
+                    <svg
+                      class="mobile-menu-socmed-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#twitter-footer"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <!-- Facebook Icon -->
+                <li class="mobile-menu-socmed-icon">
+                  <a href="" class="mobile-menu-socmed-link">
+                    <svg
+                      class="mobile-menu-socmed-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#facebook-footer"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <!-- LinkedIn Icon -->
+                <li class="mobile-menu-socmed-icon">
+                  <a href="" class="mobile-menu-socmed-link">
+                    <svg
+                      class="mobile-menu-socmed-svg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#linkedin-footer"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -344,7 +476,7 @@
 
         <!-- HW6 -->
         <!-- Subscription -->
-        <div class="wrapper">
+        <div class="subscribe-wrapper">
           <p class="footer-form-header">Subscribe</p>
           <form class="footer-form">
             <label class="footer-form-label"
@@ -372,5 +504,16 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile Menu JS -->
+    <script defer src="js/mobile-menu.js"></script>
+
+    <!-- Scroll Lock -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
