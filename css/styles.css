@@ -1423,44 +1423,8 @@ img {
 
   /* Navigation Items */
 
-  /* HW5 */
-  .active.link {
-    color: var(--ocean);
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .contact-item > .link {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
   .active::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 4px;
-    background-color: var(--ocean);
-    border-radius: 2px;
-    width: 100%;
-  }
-
-  .header-logo {
-    color: var(--navy-blue);
-  }
-
-  .nav > .list {
-    display: flex;
-    gap: 40px;
-  }
-
-  .item {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue);
-    padding: 24px 0;
+    bottom: -5%;
   }
 
   li > .link:hover,
@@ -1470,16 +1434,8 @@ img {
 
   /* Address */
 
-  .contacts {
-    font-style: normal;
-  }
-
   .contact {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate);
-    padding: 24px 0;
   }
 
   .contacts > .list {
@@ -1487,100 +1443,38 @@ img {
     gap: 40px;
   }
 
+  .list.address {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
   /* MAIN */
 
   /* First Section */
 
   .hero-section {
-    background-color: var(--navy-blue);
     padding: 188px 0;
     /* HW4 */
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-img.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1440px, 1440px;
-  }
-
-  .main-header {
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--white);
-    max-width: 496px;
-    margin: 0 auto 48px;
-  }
-
-  .hero-button {
-    background-color: var(--iris);
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--white);
-    cursor: pointer;
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    margin: 0 auto;
-    /* HW5 */
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .hero-button:hover,
-  .hero-button:focus {
-    background-color: var(--ocean);
+    background-size: auto;
+    height: 600px;
   }
 
   /* Second Section */
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
 
   .info .list-header,
   .svc .list-header {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue);
-    margin-bottom: 8px;
-    text-align: left;
   }
 
   .info .list-text,
   .svc .list-text {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate);
-    text-align: left;
+    font-weight: 400;
   }
 
   .second-section {
     padding: 120px 0;
-  }
-
-  .list.info {
-    display: flex;
-    gap: 24px;
   }
 
   .info-card {
@@ -1612,7 +1506,8 @@ img {
   }
 
   .third-section {
-    padding-bottom: 120px;
+    padding: 0 0 120px;
+    display: block;
   }
 
   .service.list {
@@ -1627,7 +1522,6 @@ img {
   /* Fourth Section */
 
   .fourth-section {
-    background-color: var(--cloud);
     padding: 120px 0;
   }
 
@@ -1765,20 +1659,22 @@ img {
 
   .footer > .container {
     display: flex;
-    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: left;
+    gap: 0;
+  }
+
+  .footer .wrapper {
+    justify-content: left;
+    display: block;
+    width: 50%;
+    flex-basis: calc((100% - 24px) / 3);
+    max-width: 264px;
   }
 
   .wrapper {
-    margin-right: 120px;
-  }
-
-  .footer-socmed-header {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--white);
-    margin-bottom: 16px;
+    margin-right: 96px;
+    margin-bottom: 0;
   }
 
   .footer-socmed {
