@@ -216,6 +216,7 @@ body {
 .mobile-menu-socmed {
   display: flex;
   gap: 56px;
+  margin-bottom: 24px;
 }
 
 .mobile-menu-socmed-icon {
